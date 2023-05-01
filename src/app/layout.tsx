@@ -1,3 +1,4 @@
+import Sidebar from '@/components/surface/Sidebar/index'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-gray-900 text-white flex max-h-screen h-screen'>
+        <Sidebar/>
+        {children}
+      </body>
     </html>
   )
 }
